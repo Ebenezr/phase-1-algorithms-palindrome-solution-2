@@ -1,5 +1,11 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let string = word.toLowerCase();
+  for(let i = 0; i < string.length; i++) {
+    if(string[i] !== string[string.length - 1 - i]) {
+      return false;
+    }
+  }
 }
 
 /* 
